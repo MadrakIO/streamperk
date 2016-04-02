@@ -1,0 +1,154 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
+
+framework:
+    #esi:             ~
+    #translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        handler_id: session.handler.pdo
+        cookie_lifetime: 0
+        gc_maxlifetime: "%session_max_lifetime%"
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    form:
+        resources: ['bootstrap_3_layout.html.twig']
+    form_themes:
+        - 'StreamPerkServerBundle:Form:fields.html.twig'
+
+# Assetic Configuration
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        less:
+            node: /usr/bin/node
+            node_paths: [/usr/lib/node_modules]
+            apply_to: "\.less$"
+        cssrewrite: ~
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #     path:     "%database_path%"
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+# OAuth Configuration
+hwi_oauth:
+    firewall_names: [ secured_area ]
+    resource_owners:
+        twitch:
+            type:          twitch
+            client_id:     "%twitch_client_id%"
+            client_secret: "%twitch_client_secret%"
+            scope: "user_read user_subscriptions channel_check_subscription"
+            options:
+                csrf: true
+        gamewisp:
+            type:          gamewisp
+            client_id:     "%gamewisp_identifier%"
+            client_secret: "%gamewisp_secret%"
+            scope: "user_read,subscriber_read_full"
+            options:
+                csrf: true
+
+# LIIP Monitor Bundle Configuration
+liip_monitor:
+    enable_controller: false
+    mailer:
+        enabled: true
+        recipient: "%streamperk.monitor_email_recipient%"
+        sender: "%streamperk.monitor_email_sender%"
+        subject: 'A Monitor Failure Occurred'
+        send_on_warning: false
+    checks:
+        readable_directory: ["%kernel.cache_dir%"]
+        writable_directory: ["%kernel.cache_dir%"]
+        disk_usage:
+            critical: 50
+        symfony_requirements:
+            file: '%kernel.root_dir%/SymfonyRequirements.php'
+        doctrine_dbal: [default]
+        symfony_version: ~
+        security_advisory:
+            lock_file: '%kernel.root_dir%/../composer.lock'
+
+# MadrakIO Easy Admin Bundle Configuration
+madrak_io_easy_admin:
+    parent_template: 'StreamPerkCoreBundle:Theme:admin.layout.html.twig'
+    check_grants: true
+
+# STOF Doctrine Extensions Bundle
+stof_doctrine_extensions:
+    default_locale: en_US
+    orm:
+        default:
+            sluggable: true
+
+# MadrakIO Extendable Configuration Bundle Configuration
+madrak_io_extendable_configuration:
+    configuration_class: MadrakIO\StreamPerk\Bundle\CoreBundle\Entity\Configuration
+
+# CSA Guzzle Bundle Configuration
+csa_guzzle:
+    clients:
+        twitch_api:
+            config:
+                base_uri: https://api.twitch.tv/kraken/
+                headers:
+                    Accept: application/vnd.twitchtv.v3+json
+                    Client-ID: '%twitch_client_id%'
+        gamewisp_api:
+            config:
+                base_uri: https://api.gamewisp.com/pub/v1/
+                headers:
+                    Client-ID: '%gamewisp_identifier%'

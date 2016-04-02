@@ -1,0 +1,34 @@
+stream_perk_page:
+    resource: "@StreamPerkPageBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+stream_perk_core:
+    resource: "@StreamPerkCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+stream_perk_server:
+    resource: "@StreamPerkServerBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
+hwi_oauth_login:
+    resource: "@HWIOAuthBundle/Resources/config/routing/login.xml"
+    prefix:   /login
+
+twitch_login:
+    path: /login/check-twitch
+
+gamewisp_login:
+    path: /login/check-gamewisp
+
+logout:
+    path: /logout
+
+streamperk_theme:
+    resource: "@StreamPerkThemeBundle/Resources/config/routing.yml"

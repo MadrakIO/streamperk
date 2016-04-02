@@ -1,0 +1,44 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/book/security.html
+security:
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    providers:
+        in_memory:
+            memory: ~
+        hwi_oauth_user_provider:
+            id: streamperk.user_manager
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        data:
+            pattern:  ^/data
+            anonymous: true
+        connect:
+            pattern:  ^/connect
+            anonymous: ~
+        login:
+            pattern:  ^/login/?$
+            anonymous: ~
+        secured_area:
+            pattern:    ^/(.+)$
+            anonymous: false
+            logout: ~
+            oauth:
+                resource_owners:
+                    twitch:        "/login/check-twitch"
+                    gamewisp:      "/login/check-gamewisp"
+                login_path:        /login
+                use_forward:       false
+                failure_path:      /login
+                default_target_path: page_default
+                use_referer: false
+
+                oauth_user_provider:
+                    service: streamperk.user_manager
+
+    access_control:
+        - { path: ^/manage, allow_if: "has_role('ROLE_SITE_MANAGER') or has_role('ROLE_SUPER_ADMIN')" }

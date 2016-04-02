@@ -1,0 +1,74 @@
+{
+    "name": "madrakio/streamperk",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/johnmadrak/HWIOAuthBundle"
+        }
+    ],
+    "require": {
+        "helios-ag/fm-bbcode-bundle": "~6.7",
+        "liip/monitor-bundle": "~2.3",
+        "madrakio/streamperk-core-bundle": "dev-jm/alpha-1",
+        "madrakio/streamperk-theme-bundle": "dev-jm/alpha-1",
+        "madrakio/streamperk-user-bundle": "dev-jm/alpha-1",
+        "madrakio/streamperk-page-bundle": "dev-jm/alpha-1",
+        "madrakio/streamperk-server-bundle": "dev-jm/alpha-1",
+        "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners",
+        "madrakio/easy-admin-bundle": "dev-jm/wip_more_customization_options",
+        "madrakio/extendable-configuration-bundle": "dev-master",
+        "madrakio/extendable-permissions-bundle": "dev-master"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "~3.0",
+        "symfony/phpunit-bridge": "~2.7",
+        "hautelook/alice-bundle": "^1.1",
+        "doctrine/data-fixtures": "^1.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "php app/console assetic:dump"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "php app/console assetic:dump"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin",
+        "platform": {
+            "php": "5.6.17"
+        }
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml",
+            "keep-outdated": true
+        }
+    }
+}
