@@ -49,6 +49,7 @@ class AppKernel extends Kernel
             new MadrakIO\StreamPerk\Bundle\UserBundle\StreamPerkUserBundle(),
             new MadrakIO\StreamPerk\Bundle\ServerBundle\StreamPerkServerBundle(),
             new MadrakIO\StreamPerk\Bundle\LandingBundle\StreamPerkLandingBundle(),
+            new MadrakIO\StreamPerk\Bundle\PollBundle\StreamPerkPollBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

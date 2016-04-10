@@ -18,6 +18,11 @@ stream_perk_landing:
     type:     annotation
     prefix:   /
 
+stream_perk_poll:
+    resource: "@StreamPerkPollBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect
