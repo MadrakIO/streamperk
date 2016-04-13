@@ -12,7 +12,7 @@
 
 # Parameters
 /app/config/parameters.yml
-/app/config/parameters.ini
+/app/config/multisite/*.yml
 
 # Managed by Composer
 /app/bootstrap.php.cache

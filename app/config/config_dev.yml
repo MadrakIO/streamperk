@@ -1,4 +1,5 @@
 imports:
+    - { resource: parameters.yml }
     - { resource: config.yml }
 
 framework:
@@ -37,6 +38,6 @@ monolog:
 # HauteLook Alice Bundle Configuration
 hautelook_alice:
     db_drivers:
-        orm: ~        
+        orm: ~
     locale: en_US
     seed: 1             # A seed to make sure faker generates data consistently across runs, set to null to disable

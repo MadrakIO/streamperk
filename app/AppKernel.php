@@ -65,6 +65,13 @@ class AppKernel extends Kernel
 
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $multisiteConfig = __DIR__ . '/../app/config/multisite/' . $this->getEnvironment() . '.yml';
+        if (file_exists($multisiteConfig) === true) {
+            $loader->load($multisiteConfig);
+
+            return;
+        }
+
+        $loader->load($this->getRootDir() . '/config/config_' . $this->getEnvironment() . '.yml');
     }
 }

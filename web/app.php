@@ -18,7 +18,16 @@ $loader->unregister();
 $apcLoader->register(true);
 */
 
-$kernel = new AppKernel('prod', false);
+$environment = 'prod';
+if (isset($_SERVER['SERVER_NAME']) === true && empty($_SERVER['SERVER_NAME']) === false) {
+    $proposedEnvironment = str_replace(['www','.'], '', $_SERVER['SERVER_NAME']);
+    $multisiteConfig = __DIR__ . '/../app/config/multisite/' . $proposedEnvironment . '.yml';
+    if (file_exists($multisiteConfig) === true) {
+        $environment = $proposedEnvironment;
+    }
+}
+
+$kernel = new AppKernel($environment, false);
 $kernel->loadClassCache();
 //$kernel = new AppCache($kernel);
 
