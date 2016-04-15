@@ -23,6 +23,11 @@ stream_perk_poll:
     type:     annotation
     prefix:   /
 
+stream_perk_schedule:
+    resource: "@StreamPerkScheduleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect
