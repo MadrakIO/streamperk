@@ -14,18 +14,9 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        data:
-            pattern:  ^/data
-            anonymous: true
-        connect:
-            pattern:  ^/connect
-            anonymous: ~
-        login:
-            pattern:  ^/login/?$
-            anonymous: ~
         secured_area:
             pattern:    ^/(.+)$
-            anonymous: false
+            anonymous: ~
             logout: ~
             oauth:
                 resource_owners:
@@ -41,4 +32,9 @@ security:
                     service: streamperk.user_manager
 
     access_control:
-        - { path: ^/manage, allow_if: "has_role('ROLE_SITE_MANAGER') or has_role('ROLE_SUPER_ADMIN')" }
+        - { path: ^/public, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/data, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/connect, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/manage, roles: IS_AUTHENTICATED_FULLY, allow_if: "has_role('ROLE_SITE_MANAGER') or has_role('ROLE_SUPER_ADMIN')" }
+        - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
