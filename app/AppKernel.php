@@ -33,7 +33,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\TimeBundle\KnpTimeBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new FM\BbcodeBundle\FMBbcodeBundle(),
+            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
             new Ras\Bundle\FlashAlertBundle\RasFlashAlertBundle(),
 
             //Monitoring
@@ -51,6 +51,7 @@ class AppKernel extends Kernel
             new MadrakIO\StreamPerk\Bundle\LandingBundle\StreamPerkLandingBundle(),
             new MadrakIO\StreamPerk\Bundle\PollBundle\StreamPerkPollBundle(),
             new MadrakIO\StreamPerk\Bundle\ScheduleBundle\StreamPerkScheduleBundle(),
+            new MadrakIO\StreamPerk\Bundle\ForumBundle\StreamPerkForumBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

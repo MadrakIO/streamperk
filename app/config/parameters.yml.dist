@@ -22,6 +22,10 @@ parameters:
     streamperk.monitor_email_recipient: ~
     streamperk.monitor_email_sender: ~
     streamperk.encryption_key: ~
+    streamperk.image_proxy.server_address: ~
+    streamperk.image_proxy.hashing_algorithm: ~
+    streamperk.image_proxy.salt: ~
+    streamperk.image_proxy.secret: ~
 
     # Twitch Configuration
     twitch_client_id: ~

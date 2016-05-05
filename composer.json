@@ -18,7 +18,6 @@
         }
     ],
     "require": {
-        "helios-ag/fm-bbcode-bundle": "~6.7",
         "liip/monitor-bundle": "~2.3",
         "madrakio/streamperk-core-bundle": "dev-jm/alpha-1",
         "madrakio/streamperk-theme-bundle": "dev-jm/alpha-1",
@@ -28,6 +27,7 @@
         "madrakio/streamperk-landing-bundle": "dev-jm/alpha-1",
         "madrakio/streamperk-poll-bundle": "dev-jm/alpha-1",
         "madrakio/streamperk-schedule-bundle": "dev-jm/alpha-1",
+        "madrakio/streamperk-forum-bundle": "dev-jm/alpha-1",
         "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners",
         "madrakio/easy-admin-bundle": "dev-jm/wip_more_customization_options",
         "madrakio/extendable-configuration-bundle": "dev-master",

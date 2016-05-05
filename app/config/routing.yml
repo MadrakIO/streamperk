@@ -28,6 +28,11 @@ stream_perk_schedule:
     type:     annotation
     prefix:   /
 
+stream_perk_forum:
+    resource: "@StreamPerkForumBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect
