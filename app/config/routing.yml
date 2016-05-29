@@ -38,6 +38,11 @@ stream_perk_blog:
     type:     annotation
     prefix:   /
 
+stream_perk_giveaway:
+    resource: "@StreamPerkGiveawayBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect
@@ -51,6 +56,9 @@ twitch_login:
 
 gamewisp_login:
     path: /login/check-gamewisp
+
+beam_login:
+    path: /login/check-beam
 
 logout:
     path: /logout

@@ -99,6 +99,13 @@ hwi_oauth:
             scope: "user_read,subscriber_read_full"
             options:
                 csrf: true
+        beam:
+            type:          beam
+            client_id:     "%beam_client_id%"
+            client_secret: "%beam_client_secret%"
+            scope: "user:details:self subscription:view:self channel:details:self"
+            options:
+                csrf: true
 
 # LIIP Monitor Bundle Configuration
 liip_monitor:
@@ -151,3 +158,8 @@ csa_guzzle:
                 base_uri: https://api.gamewisp.com/pub/v1/
                 headers:
                     Client-ID: '%gamewisp_identifier%'
+        beam_api:
+            config:
+                base_uri: https://beam.pro/api/v1/
+                headers:
+                    Client-ID: '%beam_client_id%'

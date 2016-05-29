@@ -34,3 +34,7 @@ parameters:
     # GameWisp Configuration
     gamewisp_identifier: ~
     gamewisp_secret: ~
+
+    # Beam Configuration
+    beam_client_id: ~
+    beam_client_secret: ~

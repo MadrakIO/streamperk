@@ -22,6 +22,7 @@ security:
                 resource_owners:
                     twitch:        "/login/check-twitch"
                     gamewisp:      "/login/check-gamewisp"
+                    beam:          "/login/check-beam"
                 login_path:        /login
                 use_forward:       false
                 failure_path:      /login

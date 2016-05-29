@@ -29,7 +29,8 @@
         "madrakio/streamperk-schedule-bundle": "dev-jm/alpha-1",
         "madrakio/streamperk-forum-bundle": "dev-jm/alpha-1",
         "madrakio/streamperk-blog-bundle": "dev-jm/alpha-1",
-        "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners",
+        "madrakio/streamperk-giveaway-bundle": "dev-jm/alpha-1",
+        "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners_2",
         "madrakio/easy-admin-bundle": "dev-jm/wip_more_customization_options",
         "madrakio/extendable-configuration-bundle": "dev-master",
         "madrakio/extendable-permissions-bundle": "dev-master"
