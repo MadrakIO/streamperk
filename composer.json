@@ -17,6 +17,8 @@
             "url": "https://github.com/johnmadrak/HWIOAuthBundle"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "liip/monitor-bundle": "~2.3",
         "madrakio/streamperk-core-bundle": "dev-master",
