@@ -163,3 +163,37 @@ csa_guzzle:
                 base_uri: https://beam.pro/api/v1/
                 headers:
                     Client-ID: '%beam_client_id%'
+
+# FOS Rest Bundle
+fos_rest:
+    zone:
+        - { path: ^/api/* }
+    allowed_methods_listener:
+        enabled:              true
+    serializer:
+        serialize_null:       true
+    routing_loader:
+      default_format: 'json'
+    view:
+        view_response_listener:
+            enabled:              true
+            force:                true
+        failed_validation:    400
+        empty_content:        204
+        serialize_null:       true
+    exception:
+        enabled:              true
+    format_listener:
+        enabled:              true
+    versioning:
+        enabled: true
+        resolvers:
+            query:
+                enabled: true
+                parameter_name: version
+            custom_header:
+                enabled: true
+                header_name: X-Accept-Version
+        guessing_order:
+            - query
+            - custom_header

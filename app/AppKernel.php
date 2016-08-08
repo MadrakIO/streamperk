@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             //General
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Csa\Bundle\GuzzleBundle\CsaGuzzleBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new MadrakIO\Bundle\EasyAdminBundle\MadrakIOEasyAdminBundle(),
 
@@ -54,6 +56,7 @@ class AppKernel extends Kernel
             new MadrakIO\StreamPerk\Bundle\ForumBundle\StreamPerkForumBundle(),
             new MadrakIO\StreamPerk\Bundle\BlogBundle\StreamPerkBlogBundle(),
             new MadrakIO\StreamPerk\Bundle\GiveawayBundle\StreamPerkGiveawayBundle(),
+            new MadrakIO\StreamPerk\Bundle\WidgetPageBundle\StreamPerkWidgetPageBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

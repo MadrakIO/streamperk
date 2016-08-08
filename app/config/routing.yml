@@ -13,6 +13,13 @@ stream_perk_server:
     type:     annotation
     prefix:   /
 
+streamperk_server_api:
+    type:     rest
+    resource: @StreamPerkServerBundle/Controller/Api
+    prefix: /api/
+    options:
+      expose: true
+
 stream_perk_landing:
     resource: "@StreamPerkLandingBundle/Controller/"
     type:     annotation
@@ -23,10 +30,24 @@ stream_perk_poll:
     type:     annotation
     prefix:   /
 
+streamperk_poll_api:
+    type:     rest
+    resource: @StreamPerkPollBundle/Controller/Api
+    prefix: /api/
+    options:
+      expose: true
+
 stream_perk_schedule:
     resource: "@StreamPerkScheduleBundle/Controller/"
     type:     annotation
     prefix:   /
+
+streamperk_schedule_api:
+    type:     rest
+    resource: @StreamPerkScheduleBundle/Controller/Api
+    prefix: /api/
+    options:
+      expose: true
 
 stream_perk_forum:
     resource: "@StreamPerkForumBundle/Controller/"
@@ -38,8 +59,27 @@ stream_perk_blog:
     type:     annotation
     prefix:   /
 
+streamperk_blog_api:
+    type:     rest
+    resource: @StreamPerkBlogBundle/Controller/Api
+    prefix: /api/
+    options:
+      expose: true
+
 stream_perk_giveaway:
     resource: "@StreamPerkGiveawayBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+streamperk_giveaway_api:
+    type:     rest
+    resource: @StreamPerkGiveawayBundle/Controller/Api
+    prefix: /api/
+    options:
+      expose: true
+
+stream_perk_widget_page:
+    resource: "@StreamPerkWidgetPageBundle/Controller/"
     type:     annotation
     prefix:   /
 
