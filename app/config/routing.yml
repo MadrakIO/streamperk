@@ -8,6 +8,13 @@ stream_perk_core:
     type:     annotation
     prefix:   /
 
+streamperk_core_api:
+    type:     rest
+    resource: "@StreamPerkCoreBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
 stream_perk_server:
     resource: "@StreamPerkServerBundle/Controller/"
     type:     annotation
@@ -15,7 +22,7 @@ stream_perk_server:
 
 streamperk_server_api:
     type:     rest
-    resource: @StreamPerkServerBundle/Controller/Api
+    resource: "@StreamPerkServerBundle/Controller/Api"
     prefix: /api/
     options:
       expose: true
@@ -32,7 +39,7 @@ stream_perk_poll:
 
 streamperk_poll_api:
     type:     rest
-    resource: @StreamPerkPollBundle/Controller/Api
+    resource: "@StreamPerkPollBundle/Controller/Api"
     prefix: /api/
     options:
       expose: true
@@ -44,7 +51,7 @@ stream_perk_schedule:
 
 streamperk_schedule_api:
     type:     rest
-    resource: @StreamPerkScheduleBundle/Controller/Api
+    resource: "@StreamPerkScheduleBundle/Controller/Api"
     prefix: /api/
     options:
       expose: true
@@ -61,7 +68,7 @@ stream_perk_blog:
 
 streamperk_blog_api:
     type:     rest
-    resource: @StreamPerkBlogBundle/Controller/Api
+    resource: "@StreamPerkBlogBundle/Controller/Api"
     prefix: /api/
     options:
       expose: true
@@ -73,15 +80,22 @@ stream_perk_giveaway:
 
 streamperk_giveaway_api:
     type:     rest
-    resource: @StreamPerkGiveawayBundle/Controller/Api
+    resource: "@StreamPerkGiveawayBundle/Controller/Api"
     prefix: /api/
     options:
       expose: true
 
-stream_perk_widget_page:
+streamperk_widget_page:
     resource: "@StreamPerkWidgetPageBundle/Controller/"
     type:     annotation
     prefix:   /
+
+streamperk_widget_page_api:
+    type:     rest
+    resource: "@StreamPerkWidgetPageBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
 
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"

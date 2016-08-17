@@ -131,7 +131,14 @@ liip_monitor:
 # MadrakIO Easy Admin Bundle Configuration
 madrak_io_easy_admin:
     parent_template: 'StreamPerkCoreBundle:Theme:admin.layout.html.twig'
-    check_grants: true
+    grants:
+        check: true
+        attributes:
+            create: 'MANAGE'
+            show: 'MANAGE'
+            edit: 'MANAGE'
+            delete: 'MANAGE'
+            menu: 'MANAGE'
 
 # STOF Doctrine Extensions Bundle
 stof_doctrine_extensions:
