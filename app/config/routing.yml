@@ -97,6 +97,13 @@ streamperk_widget_page_api:
     options:
       expose: true
 
+streamperk_file_api:
+    type:     rest
+    resource: "@StreamPerkFileBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
     prefix:   /connect

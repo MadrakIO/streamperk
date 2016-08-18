@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new MadrakIO\Bundle\EasyAdminBundle\MadrakIOEasyAdminBundle(),
+            new Oneup\FlysystemBundle\OneupFlysystemBundle(),
 
             //Authentication
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
@@ -57,6 +58,7 @@ class AppKernel extends Kernel
             new MadrakIO\StreamPerk\Bundle\BlogBundle\StreamPerkBlogBundle(),
             new MadrakIO\StreamPerk\Bundle\GiveawayBundle\StreamPerkGiveawayBundle(),
             new MadrakIO\StreamPerk\Bundle\WidgetPageBundle\StreamPerkWidgetPageBundle(),
+            new MadrakIO\StreamPerk\Bundle\FileBundle\StreamPerkFileBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

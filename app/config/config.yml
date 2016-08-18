@@ -204,3 +204,16 @@ fos_rest:
         guessing_order:
             - query
             - custom_header
+
+# OneUp FlySystem Bundle
+oneup_flysystem:
+    adapters:
+        streamperk.file.s3_adapter:
+            awss3v2:
+                client: streamperk.file.s3_client
+                bucket: "%streamperk.filesystem.s3.bucket%"
+                prefix: "%streamperk.filesystem.s3.prefix%"
+    filesystems:
+        streamperk.filesystem:
+            adapter: streamperk.file.s3_adapter
+            alias: streamperk.filesystem
