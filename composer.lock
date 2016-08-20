@@ -3360,12 +3360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-theme-bundle.git",
-                "reference": "5a61aab4485c031ec8ef9493e01174a8e5eb6d99"
+                "reference": "6eaa7a56b97162a6dae04f65834bf2238dac502c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-theme-bundle/zipball/5a61aab4485c031ec8ef9493e01174a8e5eb6d99",
-                "reference": "5a61aab4485c031ec8ef9493e01174a8e5eb6d99",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-theme-bundle/zipball/6eaa7a56b97162a6dae04f65834bf2238dac502c",
+                "reference": "6eaa7a56b97162a6dae04f65834bf2238dac502c",
                 "shasum": ""
             },
             "require": {
@@ -3393,7 +3393,7 @@
             ],
             "description": "StreamPerk Theme Bundle: Provides the standard themes for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-theme-bundle",
-            "time": "2016-08-20 01:39:47"
+            "time": "2016-08-20 21:34:53"
         },
         {
             "name": "madrakio/streamperk-user-bundle",
@@ -3433,12 +3433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-widget-page-bundle.git",
-                "reference": "9dc58d7055a718a8b273a9b0d2f77ffaf0b5c796"
+                "reference": "e8f1d4fa1a507f814ddf5941deaaf15af309a1a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-widget-page-bundle/zipball/9dc58d7055a718a8b273a9b0d2f77ffaf0b5c796",
-                "reference": "9dc58d7055a718a8b273a9b0d2f77ffaf0b5c796",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-widget-page-bundle/zipball/e8f1d4fa1a507f814ddf5941deaaf15af309a1a7",
+                "reference": "e8f1d4fa1a507f814ddf5941deaaf15af309a1a7",
                 "shasum": ""
             },
             "require": {
@@ -3457,7 +3457,7 @@
             ],
             "description": "StreamPerk Widget Page Bundle: Provides the widget page bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-widget-page-bundle",
-            "time": "2016-08-14 03:35:35"
+            "time": "2016-08-20 21:59:04"
         },
         {
             "name": "michelf/php-markdown",
