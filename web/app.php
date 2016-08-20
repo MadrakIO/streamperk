@@ -19,8 +19,8 @@ $apcLoader->register(true);
 */
 
 $environment = 'prod';
-if (isset($_SERVER['SERVER_NAME']) === true && empty($_SERVER['SERVER_NAME']) === false) {
-    $proposedEnvironment = str_replace(['www','.'], '', $_SERVER['SERVER_NAME']);
+if (isset($_SERVER['HTTP_HOST']) === true && empty($_SERVER['HTTP_HOST']) === false) {
+    $proposedEnvironment = str_replace(['www','.'], '', $_SERVER['HTTP_HOST']);
     $multisiteConfig = __DIR__ . '/../app/config/multisite/' . $proposedEnvironment . '.yml';
     if (file_exists($multisiteConfig) === true) {
         $environment = $proposedEnvironment;
