@@ -24,7 +24,6 @@
         "madrakio/streamperk-core-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-theme-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-user-bundle": "dev-jm/alpha-2",
-        "madrakio/streamperk-page-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-server-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-landing-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-poll-bundle": "dev-jm/alpha-2",

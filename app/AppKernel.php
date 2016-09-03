@@ -48,7 +48,6 @@ class AppKernel extends Kernel
             //StreamPerk
             new MadrakIO\StreamPerk\Bundle\CoreBundle\StreamPerkCoreBundle(),
             new MadrakIO\StreamPerk\Bundle\ThemeBundle\StreamPerkThemeBundle(),
-            new MadrakIO\StreamPerk\Bundle\PageBundle\StreamPerkPageBundle(),
             new MadrakIO\StreamPerk\Bundle\UserBundle\StreamPerkUserBundle(),
             new MadrakIO\StreamPerk\Bundle\ServerBundle\StreamPerkServerBundle(),
             new MadrakIO\StreamPerk\Bundle\LandingBundle\StreamPerkLandingBundle(),

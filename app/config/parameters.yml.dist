@@ -31,6 +31,7 @@ parameters:
     streamperk.filesystem.s3.secret: ~
     streamperk.filesystem.s3.bucket: ~
     streamperk.filesystem.s3.prefix: ~
+    streamperk.iframely.api_key: ~
 
     # Twitch Configuration
     twitch_client_id: ~

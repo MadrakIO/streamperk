@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e67c5037d1c3dd95ab13a1b85f534059",
-    "content-hash": "aef133d50ca814277f0d70b32c036a04",
+    "hash": "e268550c4e38855d7944afa74285634f",
+    "content-hash": "97850ab793f40bb9aae1ab9756a972ad",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -157,16 +157,16 @@
         },
         {
             "name": "csa/guzzle-bundle",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/csarrazi/CsaGuzzleBundle.git",
-                "reference": "4bcd11e2ae9291b5f9133808fe2982db4a3d6be3"
+                "reference": "9796e5c28e02d5c2f0aa1376e8390b1d29159d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csarrazi/CsaGuzzleBundle/zipball/4bcd11e2ae9291b5f9133808fe2982db4a3d6be3",
-                "reference": "4bcd11e2ae9291b5f9133808fe2982db4a3d6be3",
+                "url": "https://api.github.com/repos/csarrazi/CsaGuzzleBundle/zipball/9796e5c28e02d5c2f0aa1376e8390b1d29159d28",
+                "reference": "9796e5c28e02d5c2f0aa1376e8390b1d29159d28",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -214,7 +214,7 @@
                 }
             ],
             "description": "A bundle integrating GuzzleHttp >= 4.0",
-            "time": "2016-08-17 22:16:11"
+            "time": "2016-08-25 12:09:22"
         },
         {
             "name": "doctrine/annotations",
@@ -735,23 +735,26 @@
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
-            "version": "1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "303a576e2124efb07ec215e34ea2480b841cf5e4"
+                "reference": "0b89ee55bceb53c60bc4ba32924ac5053e377abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/303a576e2124efb07ec215e34ea2480b841cf5e4",
-                "reference": "303a576e2124efb07ec215e34ea2480b841cf5e4",
+                "url": "https://api.github.com/repos/doctrine/DoctrineMigrationsBundle/zipball/0b89ee55bceb53c60bc4ba32924ac5053e377abb",
+                "reference": "0b89ee55bceb53c60bc4ba32924ac5053e377abb",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "~1.0",
-                "doctrine/migrations": "~1.0",
-                "php": ">=5.3.2",
+                "doctrine/migrations": "^1.1",
+                "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -789,7 +792,7 @@
                 "migrations",
                 "schema"
             ],
-            "time": "2015-11-04 13:45:30"
+            "time": "2016-06-30 19:26:35"
         },
         {
             "name": "doctrine/inflector",
@@ -1263,16 +1266,16 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v2.4.21",
+            "version": "v2.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "dcaab46a25e1baeb5142c3e25d5b6fd495ced504"
+                "reference": "b8188801bafc420b86908ee5229a5e92143ce514"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/dcaab46a25e1baeb5142c3e25d5b6fd495ced504",
-                "reference": "dcaab46a25e1baeb5142c3e25d5b6fd495ced504",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/b8188801bafc420b86908ee5229a5e92143ce514",
+                "reference": "b8188801bafc420b86908ee5229a5e92143ce514",
                 "shasum": ""
             },
             "require": {
@@ -1338,7 +1341,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2016-08-17 16:52:00"
+            "time": "2016-08-30 18:42:36"
         },
         {
             "name": "guzzle/guzzle",
@@ -1983,16 +1986,16 @@
         },
         {
             "name": "jms/serializer",
-            "version": "1.2.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/serializer.git",
-                "reference": "ef0bfc44272a6439da7355f67904b9678c603e0a"
+                "reference": "705d0b4633b9c44e6253aa18306b3972282cd3a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/ef0bfc44272a6439da7355f67904b9678c603e0a",
-                "reference": "ef0bfc44272a6439da7355f67904b9678c603e0a",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/705d0b4633b9c44e6253aa18306b3972282cd3a3",
+                "reference": "705d0b4633b9c44e6253aa18306b3972282cd3a3",
                 "shasum": ""
             },
             "require": {
@@ -2009,7 +2012,7 @@
             },
             "require-dev": {
                 "doctrine/orm": "~2.1",
-                "doctrine/phpcr-odm": "^1.3",
+                "doctrine/phpcr-odm": "^1.3|^2.0",
                 "jackalope/jackalope-doctrine-dbal": "^1.1.5",
                 "phpunit/phpunit": "^4.8|^5.0",
                 "propel/propel1": "~1.7",
@@ -2026,7 +2029,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -2053,7 +2056,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2016-08-03 12:52:48"
+            "time": "2016-08-23 17:20:24"
         },
         {
             "name": "jms/serializer-bundle",
@@ -3017,12 +3020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-blog-bundle.git",
-                "reference": "db83f0a390ae6ce58fea42d4a1b9d160b223470b"
+                "reference": "e03a4061068b340d643d212073b3216519e40460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-blog-bundle/zipball/db83f0a390ae6ce58fea42d4a1b9d160b223470b",
-                "reference": "db83f0a390ae6ce58fea42d4a1b9d160b223470b",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-blog-bundle/zipball/e03a4061068b340d643d212073b3216519e40460",
+                "reference": "e03a4061068b340d643d212073b3216519e40460",
                 "shasum": ""
             },
             "require": {
@@ -3041,7 +3044,7 @@
             ],
             "description": "StreamPerk Blog Bundle: Provides the blog bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-blog-bundle",
-            "time": "2016-08-17 01:54:14"
+            "time": "2016-09-02 05:04:45"
         },
         {
             "name": "madrakio/streamperk-core-bundle",
@@ -3166,12 +3169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-giveaway-bundle.git",
-                "reference": "0617435ed160090f44c1b8362aea6f0101d0d7bd"
+                "reference": "cdcd2d791517bb81b3240bf454979b5a71018305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-giveaway-bundle/zipball/0617435ed160090f44c1b8362aea6f0101d0d7bd",
-                "reference": "0617435ed160090f44c1b8362aea6f0101d0d7bd",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-giveaway-bundle/zipball/cdcd2d791517bb81b3240bf454979b5a71018305",
+                "reference": "cdcd2d791517bb81b3240bf454979b5a71018305",
                 "shasum": ""
             },
             "require": {
@@ -3190,7 +3193,7 @@
             ],
             "description": "StreamPerk Giveaway Bundle: Provides the giveaway bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-giveaway-bundle",
-            "time": "2016-08-14 20:57:38"
+            "time": "2016-09-02 05:04:06"
         },
         {
             "name": "madrakio/streamperk-landing-bundle",
@@ -3225,49 +3228,17 @@
             "time": "2016-07-27 23:59:00"
         },
         {
-            "name": "madrakio/streamperk-page-bundle",
-            "version": "dev-jm/alpha-2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/MadrakIO/streamperk-page-bundle.git",
-                "reference": "7788a8a7498dc99a504831c162e39e3397bb1f16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-page-bundle/zipball/7788a8a7498dc99a504831c162e39e3397bb1f16",
-                "reference": "7788a8a7498dc99a504831c162e39e3397bb1f16",
-                "shasum": ""
-            },
-            "require": {
-                "madrakio/streamperk-core-bundle": "dev-jm/alpha-2",
-                "php": ">=5.3.9"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MadrakIO\\StreamPerk\\Bundle\\PageBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "StreamPerk Page Bundle: Provides the page bundle for StreamPerk",
-            "homepage": "https://github.com/madrakio/streamperk-page-bundle",
-            "time": "2016-08-14 01:55:25"
-        },
-        {
             "name": "madrakio/streamperk-poll-bundle",
             "version": "dev-jm/alpha-2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-poll-bundle.git",
-                "reference": "60cfaacf0b23fbc1e332228ba4b3b79f3ce0921b"
+                "reference": "934985f7f158c57ebc78b2b94bde9725554d307c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-poll-bundle/zipball/60cfaacf0b23fbc1e332228ba4b3b79f3ce0921b",
-                "reference": "60cfaacf0b23fbc1e332228ba4b3b79f3ce0921b",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-poll-bundle/zipball/934985f7f158c57ebc78b2b94bde9725554d307c",
+                "reference": "934985f7f158c57ebc78b2b94bde9725554d307c",
                 "shasum": ""
             },
             "require": {
@@ -3287,7 +3258,7 @@
             ],
             "description": "StreamPerk Poll Bundle: Provides the poll bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-poll-bundle",
-            "time": "2016-08-19 05:35:06"
+            "time": "2016-09-02 05:04:21"
         },
         {
             "name": "madrakio/streamperk-schedule-bundle",
@@ -3295,12 +3266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-schedule-bundle.git",
-                "reference": "17945b84b3006324d039eef843fc2bed302cf47b"
+                "reference": "25f5b4647717b52f44615264c0d18e94b9a922ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-schedule-bundle/zipball/17945b84b3006324d039eef843fc2bed302cf47b",
-                "reference": "17945b84b3006324d039eef843fc2bed302cf47b",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-schedule-bundle/zipball/25f5b4647717b52f44615264c0d18e94b9a922ae",
+                "reference": "25f5b4647717b52f44615264c0d18e94b9a922ae",
                 "shasum": ""
             },
             "require": {
@@ -3319,7 +3290,7 @@
             ],
             "description": "StreamPerk Schedule Bundle: Provides the schedule bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-schedule-bundle",
-            "time": "2016-08-14 02:50:09"
+            "time": "2016-09-02 05:05:07"
         },
         {
             "name": "madrakio/streamperk-server-bundle",
@@ -3327,12 +3298,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-server-bundle.git",
-                "reference": "4c7986f3fe59c5f934297c7a0da60f4597cbe89d"
+                "reference": "891836ca1eda9e039aca590d7773b41ae25aa037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-server-bundle/zipball/4c7986f3fe59c5f934297c7a0da60f4597cbe89d",
-                "reference": "4c7986f3fe59c5f934297c7a0da60f4597cbe89d",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-server-bundle/zipball/891836ca1eda9e039aca590d7773b41ae25aa037",
+                "reference": "891836ca1eda9e039aca590d7773b41ae25aa037",
                 "shasum": ""
             },
             "require": {
@@ -3352,7 +3323,7 @@
             ],
             "description": "StreamPerk Server Bundle: Provides the server bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-server-bundle",
-            "time": "2016-08-16 03:08:28"
+            "time": "2016-09-02 05:05:25"
         },
         {
             "name": "madrakio/streamperk-theme-bundle",
@@ -3360,12 +3331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-theme-bundle.git",
-                "reference": "6eaa7a56b97162a6dae04f65834bf2238dac502c"
+                "reference": "05532a422fe83bba9473c4c111bba15a73025bc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-theme-bundle/zipball/6eaa7a56b97162a6dae04f65834bf2238dac502c",
-                "reference": "6eaa7a56b97162a6dae04f65834bf2238dac502c",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-theme-bundle/zipball/05532a422fe83bba9473c4c111bba15a73025bc7",
+                "reference": "05532a422fe83bba9473c4c111bba15a73025bc7",
                 "shasum": ""
             },
             "require": {
@@ -3393,7 +3364,7 @@
             ],
             "description": "StreamPerk Theme Bundle: Provides the standard themes for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-theme-bundle",
-            "time": "2016-08-20 21:34:53"
+            "time": "2016-09-02 06:04:08"
         },
         {
             "name": "madrakio/streamperk-user-bundle",
@@ -3433,12 +3404,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-widget-page-bundle.git",
-                "reference": "e8f1d4fa1a507f814ddf5941deaaf15af309a1a7"
+                "reference": "5e9a8d5fdef4b5881a857006d5c9beed56efd95f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-widget-page-bundle/zipball/e8f1d4fa1a507f814ddf5941deaaf15af309a1a7",
-                "reference": "e8f1d4fa1a507f814ddf5941deaaf15af309a1a7",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-widget-page-bundle/zipball/5e9a8d5fdef4b5881a857006d5c9beed56efd95f",
+                "reference": "5e9a8d5fdef4b5881a857006d5c9beed56efd95f",
                 "shasum": ""
             },
             "require": {
@@ -3457,7 +3428,7 @@
             ],
             "description": "StreamPerk Widget Page Bundle: Provides the widget page bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-widget-page-bundle",
-            "time": "2016-08-20 21:59:04"
+            "time": "2016-09-02 06:04:26"
         },
         {
             "name": "michelf/php-markdown",
@@ -5341,16 +5312,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.1",
+            "version": "v1.24.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
-                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
+                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
                 "shasum": ""
             },
             "require": {
@@ -5398,7 +5369,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-05-30 09:11:59"
+            "time": "2016-09-01 17:50:53"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -5442,20 +5413,23 @@
         },
         {
             "name": "willdurand/negotiation",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willdurand/Negotiation.git",
-                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21"
+                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
-                "reference": "a8ce6da7acdf07351ccd6a9359c571ebc0725a21",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
+                "reference": "1ebc51dd6d47f4037b0d2493335304e5aea50ab6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
             },
             "type": "library",
             "extra": {
@@ -5487,7 +5461,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2015-11-21 14:23:02"
+            "time": "2016-08-30 11:08:41"
         },
         {
             "name": "zendframework/zend-code",
@@ -6027,7 +6001,6 @@
         "madrakio/streamperk-core-bundle": 20,
         "madrakio/streamperk-theme-bundle": 20,
         "madrakio/streamperk-user-bundle": 20,
-        "madrakio/streamperk-page-bundle": 20,
         "madrakio/streamperk-server-bundle": 20,
         "madrakio/streamperk-landing-bundle": 20,
         "madrakio/streamperk-poll-bundle": 20,
