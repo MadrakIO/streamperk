@@ -33,6 +33,7 @@
         "madrakio/streamperk-giveaway-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-widget-page-bundle": "dev-jm/alpha-2",
         "madrakio/streamperk-file-bundle": "dev-jm/alpha-2",
+        "madrakio/streamperk-tip-bundle": "dev-jm/alpha-2",
         "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners_2",
         "madrakio/extendable-configuration-bundle": "dev-master",
         "madrakio/extendable-permissions-bundle": "dev-master"

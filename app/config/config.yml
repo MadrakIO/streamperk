@@ -170,6 +170,12 @@ csa_guzzle:
                 base_uri: https://beam.pro/api/v1/
                 headers:
                     Client-ID: '%beam_client_id%'
+        tipeee_stream_api:
+            config:
+                base_uri: https://api.tipeeestream.com/v1.0/
+        branebot_api:
+            config:
+                base_uri: https://branebot.com/data/
 
 # FOS Rest Bundle
 fos_rest:
