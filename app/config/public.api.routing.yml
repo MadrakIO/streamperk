@@ -1,0 +1,95 @@
+streamperk_public_core_api:
+    type:     rest
+    resource: "@StreamPerkCoreBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_server_api:
+    type:     rest
+    resource: "@StreamPerkServerBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+stream_perk_landing_api:
+    type:     rest
+    resource: "@StreamPerkLandingBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_poll_api:
+    type:     rest
+    resource: "@StreamPerkPollBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_schedule_api:
+    type:     rest
+    resource: "@StreamPerkScheduleBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_forum_api:
+    type:     rest
+    resource: "@StreamPerkForumBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_blog_api:
+    type:     rest
+    resource: "@StreamPerkBlogBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_giveaway_api:
+    type:     rest
+    resource: "@StreamPerkGiveawayBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_widget_page_api:
+    type:     rest
+    resource: "@StreamPerkWidgetPageBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_file_api:
+    type:     rest
+    resource: "@StreamPerkFileBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_user_api:
+    type:     rest
+    resource: "@StreamPerkUserBundle/Controller/Api"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true
+
+streamperk_public_user_api:
+    type:     rest
+    resource: "@StreamPerkUserBundle/Controller/Api/IntegrationController.php"
+    prefix: /public/api/
+    name_prefix: public_api_
+    options:
+      expose: true

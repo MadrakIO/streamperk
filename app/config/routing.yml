@@ -1,47 +1,10 @@
-stream_perk_page:
-    resource: "@StreamPerkPageBundle/Controller/"
-    type:     annotation
-    prefix:   /
+_public_api:
+    type:     rest
+    resource: public.api.routing.yml
 
-stream_perk_core:
-    resource: "@StreamPerkCoreBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_server:
-    resource: "@StreamPerkServerBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_landing:
-    resource: "@StreamPerkLandingBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_poll:
-    resource: "@StreamPerkPollBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_schedule:
-    resource: "@StreamPerkScheduleBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_forum:
-    resource: "@StreamPerkForumBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_blog:
-    resource: "@StreamPerkBlogBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-stream_perk_giveaway:
-    resource: "@StreamPerkGiveawayBundle/Controller/"
-    type:     annotation
-    prefix:   /
+_private_api:
+    type:     rest
+    resource: private.api.routing.yml
 
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
@@ -62,6 +25,3 @@ beam_login:
 
 logout:
     path: /logout
-
-streamperk_theme:
-    resource: "@StreamPerkThemeBundle/Resources/config/routing.yml"

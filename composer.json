@@ -22,9 +22,7 @@
     "require": {
         "liip/monitor-bundle": "~2.3",
         "madrakio/streamperk-core-bundle": "dev-master",
-        "madrakio/streamperk-theme-bundle": "dev-master",
         "madrakio/streamperk-user-bundle": "dev-master",
-        "madrakio/streamperk-page-bundle": "dev-master",
         "madrakio/streamperk-server-bundle": "dev-master",
         "madrakio/streamperk-landing-bundle": "dev-master",
         "madrakio/streamperk-poll-bundle": "dev-master",
@@ -32,8 +30,12 @@
         "madrakio/streamperk-forum-bundle": "dev-master",
         "madrakio/streamperk-blog-bundle": "dev-master",
         "madrakio/streamperk-giveaway-bundle": "dev-master",
+        "madrakio/streamperk-widget-page-bundle": "dev-master",
+        "madrakio/streamperk-file-bundle": "dev-master",
+        "madrakio/streamperk-tip-bundle": "dev-master",
         "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners_2",
-        "madrakio/easy-admin-bundle": "dev-jm/wip_more_customization_options",
+        "nelmio/cors-bundle": "1.4.*",
+        "friendsofsymfony/jsrouting-bundle": "~1.6",
         "madrakio/extendable-configuration-bundle": "dev-master",
         "madrakio/extendable-permissions-bundle": "dev-master"
     },

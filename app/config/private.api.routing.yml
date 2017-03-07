@@ -1,0 +1,76 @@
+streamperk_core_api:
+    type:     rest
+    resource: "@StreamPerkCoreBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_server_api:
+    type:     rest
+    resource: "@StreamPerkServerBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+stream_perk_landing_api:
+    type:     rest
+    resource: "@StreamPerkLandingBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_poll_api:
+    type:     rest
+    resource: "@StreamPerkPollBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_schedule_api:
+    type:     rest
+    resource: "@StreamPerkScheduleBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_forum_api:
+    type:     rest
+    resource: "@StreamPerkForumBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_blog_api:
+    type:     rest
+    resource: "@StreamPerkBlogBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_giveaway_api:
+    type:     rest
+    resource: "@StreamPerkGiveawayBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_widget_page_api:
+    type:     rest
+    resource: "@StreamPerkWidgetPageBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_file_api:
+    type:     rest
+    resource: "@StreamPerkFileBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true
+
+streamperk_user_api:
+    type:     rest
+    resource: "@StreamPerkUserBundle/Controller/Api"
+    prefix: /api/
+    options:
+      expose: true

@@ -26,6 +26,15 @@ parameters:
     streamperk.image_proxy.hashing_algorithm: ~
     streamperk.image_proxy.salt: ~
     streamperk.image_proxy.secret: ~
+    streamperk.filesystem.s3.host: ~
+    streamperk.filesystem.s3.key: ~
+    streamperk.filesystem.s3.secret: ~
+    streamperk.filesystem.s3.bucket: ~
+    streamperk.filesystem.s3.prefix: ~
+    streamperk.iframely.api_key: ~
+    streamperk.discord.client_id: ~
+    streamperk.discord.bot_token: ~
+    streamperk.allowed_origins: []
 
     # Twitch Configuration
     twitch_client_id: ~
