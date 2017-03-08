@@ -20,10 +20,15 @@ $apcLoader->register(true);
 
 $environment = 'prod';
 if (isset($_SERVER['HTTP_HOST']) === true && empty($_SERVER['HTTP_HOST']) === false) {
-    $proposedEnvironment = str_replace(['www','.'], '', $_SERVER['HTTP_HOST']);
-    $multisiteConfig = __DIR__ . '/../app/config/multisite/' . $proposedEnvironment . '.yml';
-    if (file_exists($multisiteConfig) === true) {
-        $environment = $proposedEnvironment;
+    $splitUpHost = explode('.', $_SERVER['HTTP_HOST']);
+    if (count($splitUpHost) > 0) {
+        $proposedEnvironment = $splitUpHost[0];
+        if (strlen($proposedEnvironment) >= 3) {
+            $multisiteConfig = __DIR__ . '/../app/config/multisite/' . $proposedEnvironment . '.yml';
+            if (file_exists($multisiteConfig) === true) {
+                $environment = $proposedEnvironment;
+            }
+        }
     }
 }
 
