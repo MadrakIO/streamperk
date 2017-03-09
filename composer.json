@@ -11,12 +11,6 @@
             "app/AppCache.php"
         ]
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/johnmadrak/HWIOAuthBundle"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -33,7 +27,7 @@
         "madrakio/streamperk-widget-page-bundle": "dev-master",
         "madrakio/streamperk-file-bundle": "dev-master",
         "madrakio/streamperk-tip-bundle": "dev-master",
-        "hwi/oauth-bundle": "dev-jm/add_extra_resource_owners_2",
+        "hwi/oauth-bundle": "dev-master",
         "nelmio/cors-bundle": "1.4.*",
         "friendsofsymfony/jsrouting-bundle": "~1.6",
         "madrakio/extendable-configuration-bundle": "dev-master",
@@ -50,7 +44,6 @@
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ],
@@ -58,7 +51,6 @@
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ]

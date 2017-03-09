@@ -84,17 +84,27 @@ hwi_oauth:
             options:
                 csrf: true
         gamewisp:
-            type:          gamewisp
-            client_id:     "%gamewisp_identifier%"
-            client_secret: "%gamewisp_secret%"
-            scope: "user_read,subscriber_read_full"
+            type:                oauth2
+            class:               MadrakIO\StreamPerk\Bundle\UserBundle\OAuth\ResourceOwner\GameWispResourceOwner
+            client_id:           "%gamewisp_identifier%"
+            client_secret:       "%gamewisp_secret%"
+            scope:               "user_read,subscriber_read_full"
             options:
                 csrf: true
         beam:
-            type:          beam
-            client_id:     "%beam_client_id%"
-            client_secret: "%beam_client_secret%"
-            scope: "user:details:self subscription:view:self channel:details:self"
+            type:                oauth2
+            client_id:           "%beam_client_id%"
+            client_secret:       "%beam_client_secret%"
+            access_token_url:    "https://beam.pro/api/v1/oauth/token"
+            authorization_url:   "https://beam.pro/oauth/authorize"
+            infos_url:           "https://beam.pro/api/v1/users/current"
+            scope:               "user:details:self subscription:view:self channel:details:self"
+            user_response_class: HWI\Bundle\OAuthBundle\OAuth\Response\PathUserResponse
+            paths:
+                identifier: id
+                nickname:   username
+                realname: username
+                email:   email
             options:
                 csrf: true
 
