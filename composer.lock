@@ -2768,12 +2768,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-user-bundle.git",
-                "reference": "79325e6b7c28996c904518fb0c13b2c32742751e"
+                "reference": "7711b756972cc108e8cd236ae507bad365c10f08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-user-bundle/zipball/79325e6b7c28996c904518fb0c13b2c32742751e",
-                "reference": "79325e6b7c28996c904518fb0c13b2c32742751e",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-user-bundle/zipball/7711b756972cc108e8cd236ae507bad365c10f08",
+                "reference": "7711b756972cc108e8cd236ae507bad365c10f08",
                 "shasum": ""
             },
             "require": {
@@ -2792,7 +2792,7 @@
             ],
             "description": "StreamPerk User Bundle: Provides the user bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-theme-bundle",
-            "time": "2017-03-09 07:17:59"
+            "time": "2017-03-09 16:21:57"
         },
         {
             "name": "madrakio/streamperk-widget-page-bundle",
@@ -5173,7 +5173,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform":[],
+    "platform": [],
     "platform-dev": [],
     "platform-overrides": {
         "php": "5.6.17"
