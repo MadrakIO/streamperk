@@ -32,15 +32,6 @@ framework:
     fragments:       ~
     http_method_override: true
 
-# Twig Configuration
-twig:
-    debug:            "%kernel.debug%"
-    strict_variables: "%kernel.debug%"
-    form:
-        resources: ['bootstrap_3_layout.html.twig']
-    form_themes:
-        - 'StreamPerkServerBundle:Form:fields.html.twig'
-
 # Doctrine Configuration
 doctrine:
     dbal:

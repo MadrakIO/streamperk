@@ -27,5 +27,12 @@ gamewisp_login:
 beam_login:
     path: /login/check-beam
 
+home:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: '%streamperk.frontend_address%'
+        permanent: true
+
 logout:
     path: /logout

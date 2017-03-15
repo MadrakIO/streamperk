@@ -34,6 +34,7 @@ parameters:
     streamperk.iframely.api_key: ~
     streamperk.discord.client_id: ~
     streamperk.discord.bot_token: ~
+    streamperk.frontend_address: ~
     streamperk.allowed_origins: []
 
     # Twitch Configuration
