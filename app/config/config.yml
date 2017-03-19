@@ -138,7 +138,7 @@ csa_guzzle:
             config:
                 base_uri: https://api.twitch.tv/kraken/
                 headers:
-                    Accept: application/vnd.twitchtv.v3+json
+                    Accept: application/vnd.twitchtv.v5+json
                     Client-ID: '%twitch_client_id%'
         gamewisp_api:
             config:
