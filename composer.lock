@@ -2518,12 +2518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/MadrakIO/streamperk-core-bundle.git",
-                "reference": "bc2e802bd4317f8535878694092f07fd49efe2b2"
+                "reference": "6ad62f110de9d7139d578a10e4a6dc44a33a0c83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MadrakIO/streamperk-core-bundle/zipball/bc2e802bd4317f8535878694092f07fd49efe2b2",
-                "reference": "bc2e802bd4317f8535878694092f07fd49efe2b2",
+                "url": "https://api.github.com/repos/MadrakIO/streamperk-core-bundle/zipball/6ad62f110de9d7139d578a10e4a6dc44a33a0c83",
+                "reference": "6ad62f110de9d7139d578a10e4a6dc44a33a0c83",
                 "shasum": ""
             },
             "require": {
@@ -2558,7 +2558,7 @@
             ],
             "description": "StreamPerk CoreBundle Bundle: Provides the core bundle for StreamPerk",
             "homepage": "https://github.com/madrakio/streamperk-core-bundle",
-            "time": "2017-03-19 02:10:29"
+            "time": "2017-04-02 03:35:35"
         },
         {
             "name": "madrakio/streamperk-file-bundle",
