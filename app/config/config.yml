@@ -162,7 +162,7 @@ csa_guzzle:
                 headers:
                     User-Agent: 'StreamPerk Bot (https://streamperk.com, v0.0.1)'
                     Client-ID: '%streamperk.discord.client_id%'
-                    Authorization: '%streamperk.discord.bot_token%'
+                    Authorization: 'Bot %streamperk.discord.bot_token%'
                     Content-Type: 'application/json'
 
 # FOS Rest Bundle
